@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.redClass{
+	color: red;
+}
+
+body{
+	background-color: yellow;
+	text-align: center;
+}
+
+header{
+	height: 8vh;
+	background-image: url("/images/part.jpg");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: 10vh;
+	width: 100vw;
+	position: fixed;
+	top: 0px;
+}
+
+h2{
+	margin-top: 20vh;
+	margin-bottom: 2vh;
+}
+
+form, li, p, img{
+	margin-top: 1vh;
+}
+
+footer{
+	height: 8vh;
+	background-image: url("/images/part.jpg");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: 10vh;
+	width: 100vw;
+	position: fixed;
+	bottom: 0px;
+}
+
+[type=submit]{
+	padding: 5px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Grecia Antigua</title>
+	<link rel="stylesheet" href="/css/globales.css">
+</head>
+
+<body>
+		<h4>Pregunta 7: &lt;Siglo del que se tienen registros de los Juegos Olimpicos más antiguos de la historia:&gt;</h4>
+		<div id="divImg">
+			<img src="/images/p7.jpg" alt="atletas en anfora">
+			<figcaption>Atletas griegos compitiendo (Ánfora griega de la época)</figcaption>
+		</div>
+		<form th:action="@{/question7}" method="post">
+			<label for="idQ7">Selecciona la respuesta</label>
+			<select name="q7" id="idQ7" required>
+				<option value="-">-</option>
+				<option value="Siglo VIII a.C.">Siglo VIII a.C.</option>
+				<option value="Siglo III a.C.">Siglo III a.C.</option>
+				<option value="Siglo I a.C.">Siglo I a.C.</option>
+				<option value="Siglo I d.C">Siglo I d.C</option>
+			</select>
+			<br><br><input type="submit" value="Confirmar" />
+		</form>
+		<footer></footer>
+</body>
+
+</html>

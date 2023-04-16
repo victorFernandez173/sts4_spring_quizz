@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Grecia Antigua</title>
+	<link rel="stylesheet" href="/css/globales.css">
+</head>
+
+<body>
+		<h4>Pregunta 2 &lt;Nombre del Dios griego del vino y la fertilidad&gt;</h4>
+		<div>
+			<image alt="escultura griega" src="/images/p2.jpg"> 
+		</div>
+		<form th:action="@{/question2}" method="post">
+			<label for="idQ2">Respuesta: </label>
+			<input type="text" name="q2" id="idQ2" pattern="[a-zA-Z]{2,}" required><br>
+			<br> <input type="submit" value="Confirmar" />
+		</form>
+		<footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Quiz Grecia Antigua</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="/css/estilos.css">
+</head>
+
+<body>
+	<header></header>
+	<h2>Quiz Grecia Antigua</h2>
+	<h3>Antes de empezar introduce tu apodo: </h3>
+	<form th:action="@{/createUser}" method="post">
+		<label for="idName">Apodo:</label>
+		<input id="idName" type="text" name="nick" pattern="[a-zA-Z]{3,}" required>
+		<br><br><input type="submit" value="Confirmar" />
+	</form>
+	<footer></footer>
+</body>
+
+</html>

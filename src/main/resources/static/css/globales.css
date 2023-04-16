@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 90vw;
+	max-width: 1080px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: auto;
+	background-color: rgb(91, 191, 63);
+}
+
+h4{
+	padding: 0.5rem;
+	margin-top: 5vh;
+	margin-bottom: 2vh;
+	width: 90%;
+	background-color: #118c28;
+	color: white;
+	text-align: center;
+}
+
+form{
+	width: 80%;
+	text-align: center;
+}
+
+form *{
+	margin-top: 0.2rem;
+}
+
+
+input[type=submit]{
+	background-color: rgb(4, 71, 14);
+	color: white;
+	padding: 0.5rem;
+}
+
+input[type=submit]:active{
+	background-color: yellow;
+}
+
+figcaption{
+	text-align: center;
+	margin-bottom: 0.5rem;
+	font-style: italic;
+}
+
+img{
+	height: 50vh;
+}
+
+footer{
+	height: 8vh;
+	background-image: url("/images/part.jpg");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: 10vh;
+	width: 100vw;
+	position: fixed;
+	bottom: 0px;
+}

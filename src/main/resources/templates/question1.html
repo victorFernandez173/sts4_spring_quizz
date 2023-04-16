@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Grecia Antigua</title>
+	<link rel="stylesheet" href="/css/globales.css">
+</head>
+
+<body>
+	<h4 th:text="#{quest1}"></h4>
+	<div id="divImg">
+		<image alt="busto griego" src="/images/p1.png">
+	</div>
+	<form th:action="@{/question1}" method="post">
+		<input type="radio" name="q1" id="idQ1a" value="Tucídides" required>
+		<label for="idQ1a">Tucídides</label><br>
+		<input type="radio" name="q1" id="idQ1b" value="Herodoto">
+		<label for="idQ1b">Herodoto</label><br>
+		<input type="radio" name="q1" id="idQ1c" value="Pericles">
+		<label for="idQ1c">Pericles</label><br>
+		<input type="radio" name="q1" id="idQ1d" value="Solón">
+		<label for="idQ1d">Solón</label>
+		<br><br><input type="submit" value="Confirmar" />
+	</form>
+	<footer></footer>
+</body>
+
+</html>

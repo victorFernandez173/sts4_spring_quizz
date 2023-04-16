@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Grecia Antigua</title>
+	<link rel="stylesheet" href="/css/estilos.css">
+	<link rel="stylesheet" href="/css/final.css">
+</head>
+
+<body>
+	<header></header>
+	<h1 id="idInicio">PÁGINA DE FILTRADO</h1>
+
+	<div id="idRanking">
+		<h4>Ranking de jugadores:</h4>
+		<ul th:each="player:${ALLPLAYERS}">
+			<li
+				th:text="'(' +  ${player.getScore()} + ')-' + ${player.getName()} + '[' + ${player.getChallengeDate()} + ']'">
+			</li>
+		</ul>
+		
+	</div>
+	<div id="idRanking">
+		<h4>Filtrado de jugadores por puntaje:</h4>
+		<ul th:each="filtrado:${FILTRADOS}">
+			<li
+				th:text="'(' +  ${filtrado.getScore()} + ')-' + ${filtrado.getName()} + '[' + ${filtrado.getChallengeDate()} + ']'">
+			</li>
+		</ul>
+		
+	</div>
+	<div id="idFiltrar">
+		<form th:action="@{/filtrar}" method="post">
+			<label for="idNumero">Introduce una puntuación:</label>
+			<input type="number" id="idNumero" name="score"/>
+			<input type="submit" value="Filtrar" />
+		</form>
+		<form th:action="@{/final}" method="get">
+			<br><input type="submit" value="Volver a finalizar" />
+		</form>
+	</div>
+
+
+	<footer></footer>
+</body>
+
+</html>

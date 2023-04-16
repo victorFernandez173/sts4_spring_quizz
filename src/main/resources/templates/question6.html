@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Grecia Antigua</title>
+	<link rel="stylesheet" href="/css/globales.css">
+</head>
+
+<body>
+		<h4>Pregunta 6: &lt;¿A quién se atribuye la frase: "Solo se que no se nada"?&gt;</h4>
+		<div id="divImg">
+			<img src="/images/p6.jpg" alt="escultura griega">
+		</div>
+		<form th:action="@{/question6}" method="post">
+			<label for="idQ6">Respuesta:</label>
+			<input id="idQ6" type="text" name="q6" pattern="[a-zA-Z]{2,}" required>
+			<br><br><input type="submit" value="Confirmar" />
+		</form>
+		<footer></footer>
+</body>
+
+</html>

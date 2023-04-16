@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Grecia Antigua</title>
+	<link rel="stylesheet" href="/css/estilos.css">
+	<link rel="stylesheet" href="/css/final.css">
+</head>
+
+<body>
+	<header></header>
+	<div id="idResultado">
+
+		<div>
+			<h2>RESULTADO</h2>
+			<h4>Tu respuesta // Respuesta correcta</h4>
+			<ul th:each="answer,sol : ${SESS_ANSWERS}">
+				<li th:class="${answer} != ${SOLUTIONS[sol.index]}? redClass"
+					th:text="${answer} + '  //  ' + ${SOLUTIONS[sol.index]}">
+				</li>
+			</ul>
+		</div>
+
+		<div th:switch="${CLASSIFICATION}">
+			<div th:case="'C'"><img src="/images/c.png" alt="clase C" width="300"></div>
+			<div th:case="'B'"><img src="/images/b.png" alt="clase B" width="300"></div>
+			<div th:case="'A'"><img src="/images/a.png" alt="clase A" width="300"></div>
+			<div th:case="'S'"><img src="/images/s.png" alt="clase S" width="300"></div>
+			<p th:text="'Puntuación: ' + ${SCORE} + '/100' + ' (' + ${CLASSIFICATION} + ')'"></p>
+		</div>
+
+	</div>
+
+
+	<div id="idRanking">
+		<h4>Ranking de jugadores:</h4>
+		<ul th:each="player:${ALLPLAYERS}">
+			<li
+				th:text="'(' +  ${player.getScore()} + ')-' + ${player.getName()} + '[' + ${player.getChallengeDate()} + ']'">
+			</li>
+		</ul>
+		<div id="id_forms">
+			<form th:action="@{/filtrar}" method="post">
+				<input type="submit" value="Ir a filtrar" />
+			</form>
+			<div></div>
+			<form th:action="@{/final}" method="post">
+				<input type="submit" value="Finalizar" />
+			</form>
+		</div>
+
+	</div>
+	<div id="idFinalizar">
+	</div>
+
+
+	<footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz Grecia Antigua</title>
+	<link rel="stylesheet" href="/css/globales.css">
+</head>
+
+<body>
+		<h4>Pregunta 5: &lt;¿A quién se atribuye esta famosa estatua griega?&gt;</h4>
+		<div id="divImg">
+			<img src="/images/foto-escultura.jpg" alt="escultura griega">
+		</div>
+		<form th:action="@{/question5}" method="post">
+			<input type="radio" name="q5" id="idQ5a" value="Fídeas" required>
+			<label for="idQ5a">Fídeas</label><br>
+			<input type="radio" name="q5" id="idQ5b" value="Mirón">
+			<label for="idQ5b">Mirón</label><br>
+			<input type="radio" name="q5" id="idQ5c" value="Praxíteles">
+			<label for="idQ5c">Praxíteles</label><br>
+			<input type="radio" name="q5" id="idQ5d" value="Lísipo">
+			<label for="idQ5d">Lísipo</label>
+			<br><br><input type="submit" value="Confirmar" />
+		</form>
+		<footer></footer>
+</body>
+
+</html>
