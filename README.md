@@ -6,4 +6,11 @@
 
 -Remember to set the 'application.properties' and other config to your needs
 
-<img src="/src/main/resources/static/images/foto-escultura.jpg">
+-Check it out:
+
+<img src="img1.png">
+<img src="img2.png">
+<img src="img3.png">
+<img src="img4.png">
+<img src="img5png">
+<img src="img6.png">
